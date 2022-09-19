@@ -4,8 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 
 import net.bytebuddy.utility.nullability.NeverNull;
 
@@ -21,16 +19,6 @@ public class adhar {
 	@NeverNull
 	private long number;
 
-	@OneToOne
-	@JoinColumn
-	
-	person p;
-public person getP() {
-		return p;
-	}
-	public void setP(person p) {
-		this.p = p;
-	}
 public int getId() {
 		return id;
 	}
